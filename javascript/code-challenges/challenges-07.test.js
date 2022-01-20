@@ -1,7 +1,5 @@
 'use strict';
 
-const { slice } = require("cheerio/lib/api/traversing");
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
