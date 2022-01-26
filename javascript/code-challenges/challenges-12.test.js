@@ -67,7 +67,7 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-  let validEmailCheck =/\w/;
+  let validEmailCheck = /^[a-zA-Z0-9]+\.*[a-zA-Z0-9]+@[a-zA-Z0-9]+\.(net|com|org)$/;
   return validEmailCheck.test(email);
 };
 
@@ -107,7 +107,8 @@ findTagNames(['<div><h1>Hello, world!</h1></div>', '<p>Welcome to my site</p>'])
 ------------------------------------------------------------------------------------------------ */
 
 const findTagNames = elements => {
-  // Solution code here...
+  // let tagNameCapture = /\/[a-zA-Z0-9]+/g;
+  // tagNameCapture.exec(elements);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -219,7 +220,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   test('It should return the closing tags', () => {
     expect(findTagNames(['<h1>Hello, world!</h1>', '<p>Welcome to my site</p>'])).toStrictEqual(['/h1', '/p']);
   });
