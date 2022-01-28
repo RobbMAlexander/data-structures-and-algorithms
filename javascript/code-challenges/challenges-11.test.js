@@ -19,9 +19,12 @@ Becomes:
 ------------------------------------------------------------------------------------------------ */
 
 function transformToLis(obj) {
-  let nameTargeted = obj.name;
-  let ageTargeted = obj.age;
-  return [`<li>name: ${nameTargeted}</li>`, `<li>age: ${ageTargeted}</li>`];
+  let entries = Object.entries(obj);
+  let liArr = [];
+  entries.forEach(((property) => {
+    liArr.push(`<li>${property[0]}: ${property[1]}</li>`);
+  }));
+  return liArr;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -73,16 +76,11 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  let divFilter = input.forEach(arr => {
-    arr.filter(element => element % 5 === 0);
+  let divFilter = input.map(arr => {
+    return arr.filter(element => typeof element === 'number' && element % 5 === 0).map(val => Math.pow(2, val)
+    );
   });
-  let endarr = divFilter.forEach(array => {
-    array.forEach(element => {
-      Math.pow(2, element);
-    });
-    return endarr;
-  });
-  return;
+  return divFilter;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -148,7 +146,13 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  let genderedCheckStr = '';
+  for (let i = 0; i < data.length; i++) {
+    if (((data[i]).gender === 'female') || ((data[i]).gender === 'male')) {
+      genderedCheckStr = genderedCheckStr + `${(data[i]).name} and `;
+    }
+  }
+  return genderedCheckStr.slice(0, -5);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -158,7 +162,13 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  let shortestObj = data.reduce((a, b) => {
+    if (parseInt(b.height) < parseInt(a.height)) {
+      a = b;
+    }
+    return a;
+  });
+  return shortestObj.name;
 };
 
 /* ------------------------------------------------------------------------------------------------
