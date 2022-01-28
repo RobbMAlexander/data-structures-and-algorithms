@@ -79,7 +79,13 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  return str.replace(/(.[.]*)/g, '');
+  let oddCharsStr = '';
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2 === 1) {
+      oddCharsStr = oddCharsStr + str.charAt(i);
+    }
+  }
+  return oddCharsStr;
 };
 
 /* ------------------------------------------------------------------------------------------------
