@@ -1,7 +1,5 @@
 'use strict';
 
-const match = require("nodemon/lib/monitor/match");
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -112,13 +110,13 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   const salesDataArr = [];
-  const Object = function (value, hour) {
-    this.sales = `${value} cookies`;
-    this.time = hour;
-  };
   data.forEach((salesValue, count) => {
-    salesDataArr.push(new Object(salesValue, hours[count]));
-  });
+    salesDataArr.push({
+      sales: `${salesValue} cookies`,
+      time: hours[count]
+    });
+  }
+  );
   return salesDataArr;
 };
 
