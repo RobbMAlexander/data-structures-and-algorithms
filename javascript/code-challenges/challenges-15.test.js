@@ -11,7 +11,7 @@ Write a function named screenForNames that takes in an array of strings and uses
 ------------------------------------------------------------------------------------------------ */
 
 const screenForNames = (arr) => {
-  let titleCheck = /^(Mr\.\s.*)|^(Mrs\.\s.*)|^(Ms\.\s.*)|^(Dr\.\s.*)/;
+  let titleCheck = /^(Mr\.\s[a-zA-Z]+)|^(Mrs\.\s[a-zA-Z]+)|^(Ms\.\s[a-zA-Z]+)|^(Dr\.\s[a-zA-Z]+)/;
   return arr.filter(name => titleCheck.test(name));
 };
 
@@ -130,6 +130,12 @@ This data could be sorted by name or price.
 const sortBy = (property, arr) => {
   arr.sort((a, b) => {
     (a[property]) - (b[property]);
+    if (a[property] < b[property]){
+      return -1;
+    }
+    if(a[property] > b[property]){
+      return 1;
+    }
   });
   return arr;
 };
