@@ -46,10 +46,28 @@ Method: `toString`
 
 * Functionality: Public `toString` method override with string return. String uses format: "{ element1 value } -> { element2 value } -> NULL" for each element, ending in null reference from tail node.
 
-## Code Challenges
+### Code Challenge 06: Linked List Insertion Methods
+02/21/2022
+Wrote three additional methods in LinkedList class: `append()`; `insertBefore()`; `insertAfter()` and some accompanying tests (WIP)
 
-### Challenge 01
 
-Location: `codechallenges/linkedlist/LinkedListChallenges`
+#### Challenge
+To implement methods for inserting nodes into linked lists at: the tail; before a given element's value; after a given element's value.
 
-Method: `linkedListChallenge06()`
+#### Approach & Efficiency
+(WIP-- some methods still pending tests)
+
+#### API
+
+Method: `append(int value)`
+
+* Functionality: Inserts additional node at tail of list holding element with value of argument integer. Public method with no expected return.
+
+Method: `insertBefore(int value, int newValue)`
+
+* Functionality: Inserts additional node before node holding element with argument value; new node holds element with value of argument integer "newValue". Public method with no expected return.
+
+Method: `insertAfter(int value, int newValue)`
+
+* Functionality: Inserts additional node after node holding element with argument value; new node holds element with value of argument integer "newValue". Public method with no expected return.
+
