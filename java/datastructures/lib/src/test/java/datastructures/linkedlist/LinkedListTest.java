@@ -5,12 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LinkedListTest {
- /* @Test
-  void testAMethod() {
-    LinkedList sut = new LinkedList();
-    System.out.println(sut);
-    assertTrue(true);
-  }  */
 
   @Test
   void Test_insert_method_input_equals_head_value() {
@@ -56,5 +50,51 @@ public class LinkedListTest {
     assertEquals("{1010} -> {2323} -> {4545} -> NULL", testList.toString(), "ToString did not return expected string output");
 
   }
+
+  @Test
+  void Test_append_method_creates_node_at_tail () {
+    LinkedList testList = new LinkedList();
+    testList.insert(1);
+    testList.insert(2);
+    testList.append(3);
+    assertEquals(3, testList.head.next.next.value, "Tail node did not equal expected (input value)");
+  }
+
+  @Test
+  void Test_append_method_has_expected_repeat_behavior () {
+    LinkedList testList = new LinkedList();
+    testList.insert(1);
+    testList.insert(2);
+    testList.append(3);
+    testList.append(4);
+    assertEquals(3, testList.head.next.next.value, "First appended value did not result in one-from-tail node with input element value");
+    assertEquals(4, testList.head.next.next.next.value, "Second appended value did not result in tail node with input element value");
+  }
+
+  /* TODO: finish CC06 tests
+  @Test
+  void Test_insertBefore_creates_node_in_list_middle () {
+    LinkedList testList = new LinkedList();
+
+  }
+
+  @Test
+  void Test_insertBefore_creates_new_head_if_newValue_equals_head_element () {
+    LinkedList testList = new LinkedList();
+
+  }
+
+  @Test
+  void Test_insertAfter_creates_node_in_list_middle () {
+    LinkedList testList = new LinkedList();
+
+  }
+
+  @Test
+  void Test_insertAfter_creates_new_tail () {
+    LinkedList testList = new LinkedList();
+
+  }
+  */
 
 }
