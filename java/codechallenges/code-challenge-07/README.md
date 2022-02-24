@@ -6,7 +6,7 @@ Return value of element in node that is `k` nodes from tail of a singly-linked L
 
 ## Whiteboard Process
 
-![challenge-03-whiteboard](./java-code-challenge-07-whiteboard.png)
+![challenge-07-whiteboard](./java-code-challenge-07-whiteboard.png)
 
 ## Approach & Efficiency
 
