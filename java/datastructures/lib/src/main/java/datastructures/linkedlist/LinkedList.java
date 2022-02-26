@@ -1,10 +1,10 @@
 package datastructures.linkedlist;
 
-public class LinkedList {
+public class LinkedList<T> {
   Node head = null;
-  Node tail = null;  // not truly required, but can be useful
+  //Node tail = null;  // not truly required, but can be useful
 
-  public void insert(int value) {
+  public void insert(T value) {
     Node insertedNode = new Node(value);
 
     // 1+ existing nodes condition
@@ -15,7 +15,7 @@ public class LinkedList {
     head = insertedNode;
   }
 
-  public boolean includes(int value) {
+  public boolean includes(T value) {
     boolean includesStatus = false;
 
     // 0 existing nodes
@@ -54,7 +54,7 @@ public class LinkedList {
     return listString;
   }
 
-  public void append(int value) {
+  public void append(T value) {
     Node appendedNode = new Node(value);
     // 0 existing nodes
     if (head == null) {
@@ -70,7 +70,7 @@ public class LinkedList {
     }
   }
 
-  public void insertBefore(int value, int newValue) {
+  public void insertBefore(T value, T newValue) {
     // check for 0 existing nodes
     primaryLoop : if (head == null) {
       System.err.println("No nodes found in list.");
@@ -93,7 +93,7 @@ public class LinkedList {
     }
   }
 
-  public void insertAfter(int value, int newValue) {
+  public void insertAfter(T value, T newValue) {
     // check for 0 existing nodes
     primaryLoop:
     if (head == null) {
