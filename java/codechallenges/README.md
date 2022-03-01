@@ -9,3 +9,5 @@
 * [Challenge 401.03: BinarySearch](./code-challenge-03/README.md)
 
 * [Challenge 401.08: zipLists](./code-challenge-08/README.md)
+
+* [Challenge 401.11: PseudoQueue](./code-challenge-11/README.md)
