@@ -12,7 +12,7 @@ Desired function `validateBrackets` must:
 
 ## Approach & Efficiency
 
-My approach iterates through each character in the string-- if an "opening bracket" character is identified, a node with the corresponding closing bracket character as held value is pushed into a stack. Closing bracket characters are compared to top value, which is popped if equal. Only if the stack is empty after full iteration is `true` returned.
+My approach first declares a stack, then iterates through each character in the string-- if an "opening bracket" character is identified, a node with the corresponding closing bracket character as held value is pushed into a stack. Closing bracket characters are compared to top value, which is popped if equal. Only if the stack is empty after full iteration is `true` returned.
 
 
   * Space efficiency: O(n). Valid strings will lead to up to half the input characters held as element values in the stack concurrently.
