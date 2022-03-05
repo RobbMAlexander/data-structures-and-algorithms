@@ -71,3 +71,35 @@ Method: `insertAfter(int value, int newValue)`
 
 * Functionality: Inserts additional node after node holding element with argument value; new node holds element with value of argument integer "newValue". Public method with no expected return.
 
+### Code Challenge 15: Binary Trees
+03/4/2022
+Wrote class for BinaryTree and subclass BinarySearchTree along with basic methods.
+
+#### Challenge
+To create a class for a binary tree with traversal methods for pre-order, in order, and post-order.
+To create a class for a binary search tree with methods for addition of nodes and to check for an existing node holding an input value.
+
+#### Approach & Efficiency
+(WIP-- some methods still pending tests)
+
+#### API
+
+Method: `append(int value)`
+
+* Functionality: Inserts additional node at tail of list holding element with value of argument integer. Public method with no expected return.
+
+Method: `insertBefore(int value, int newValue)`
+
+* Functionality: Inserts additional node before node holding element with argument value; new node holds element with value of argument integer "newValue". Public method with no expected return.
+
+Method: `insertAfter(int value, int newValue)`
+
+* Functionality: Inserts additional node after node holding element with argument value; new node holds element with value of argument integer "newValue". Public method with no expected return.
+
+Method: `insertBefore(int value, int newValue)`
+
+* Functionality: Inserts additional node before node holding element with argument value; new node holds element with value of argument integer "newValue". Public method with no expected return.
+
+Method: `insertAfter(int value, int newValue)`
+
+* Functionality: Inserts additional node after node holding element with argument value; new node holds element with value of argument integer "newValue". Public method with no expected return.
