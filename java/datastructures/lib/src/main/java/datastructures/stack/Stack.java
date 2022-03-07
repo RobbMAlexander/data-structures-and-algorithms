@@ -6,7 +6,7 @@ public class Stack<T>
 {
   Node<T> top;
 
-  void push(T value)
+  public void push(T value)
   {
     Node pushedNode = new Node(value);
     //1+ existing nodes condition
@@ -16,7 +16,7 @@ public class Stack<T>
     top = pushedNode;
   }
 
-  T pop()
+  public T pop()
   {
    T topValue;
    topValue = top.value;
@@ -24,12 +24,12 @@ public class Stack<T>
     return topValue;
   }
 
-  T peek()
+  public T peek()
   {
     return top.value;
   }
 
-  boolean isEmpty()
+  public boolean isEmpty()
   {
     if (top == null) {
       return true;
