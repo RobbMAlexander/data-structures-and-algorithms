@@ -8,7 +8,7 @@ public class BinaryTree {
 
   Node root;
 
-  public Integer[] preOrderTraversal(){
+  public int[] preOrderTraversal(){
 
     ArrayList<Integer> valueList = new ArrayList<>();
     Stack<Node> traversalStack = new Stack<>();
@@ -24,7 +24,7 @@ public class BinaryTree {
         traversalStack.push(checkedNode.leftNode);
       }
     }
-    Integer[] outputValues = new Integer[valueList.size()];
+    int[] outputValues = new int[valueList.size()];
     outputValues = valueList.toArray(outputValues);
     return outputValues;
   }

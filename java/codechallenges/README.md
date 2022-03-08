@@ -13,3 +13,5 @@
 * [Challenge 401.11: PseudoQueue](./code-challenge-11/README.md)
 
 * [Challenge 401.16: findMax (for binary tree)](./code-challenge-16/README.md)
+
+* [Challenge 401.17: Breadth-First Tree Traversal](./code-challenge-17/README.md)
