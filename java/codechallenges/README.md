@@ -11,3 +11,5 @@
 * [Challenge 401.08: zipLists](./code-challenge-08/README.md)
 
 * [Challenge 401.11: PseudoQueue](./code-challenge-11/README.md)
+
+* [Challenge 401.16: findMax (for binary tree)](./code-challenge-16/README.md)
