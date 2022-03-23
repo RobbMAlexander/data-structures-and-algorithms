@@ -7,7 +7,7 @@ Post is provided [Here](src\main\java\code-challenge-26\BLOG.md).
 
 ## Approach & Efficiency
 
-This approach iterates through the array (of integers), comparing 
+This approach iterates through an array (of integers), comparing 
 
 ### Space Efficiency
 
