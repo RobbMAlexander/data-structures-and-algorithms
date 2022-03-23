@@ -8,6 +8,6 @@ We want to sort in ascending number code order, so a properly functioning sortin
 
 ![Book comparison](./book-comparison-2.png)
 
-The librarian picks up the book, then compares to the : Our librarian will have to repeat this process not only *for each book* (except the original last book, since it will have been compared to all of the others already), but for each book *against each book* until they are all sorted.  
+The librarian picks up the book, then compares to the *****: Our librarian will have to repeat this process not only *for each book* (except the original last book, since it will have been compared to all of the others already), but for each book *against each book* until they are all sorted.  
 
-This approach is simple to understand and to code, but has its limits. While a small shelf is managable, this method quickly falls apart as the size of the library scales. This process may take more or less time depending on how "messy" the original array is, but in the worst case almost every book will have to be compared to multiple books, with the earlier ones compared to almost *every* book (On^2). Even for the computerized librarian we're coding, other solutions will often be preferable.
+This approach is simple to understand and to code, but has its limits. While a small shelf is manageable, this method quickly falls apart as the size of the library scales. This process may take more or less time depending on how "messy" the original array is, but in the worst case almost every book will have to be compared to multiple books, with the earlier ones compared to almost *every* book (O(n^2)). Even for the computerized librarian we're coding, other solutions will often be preferable.
