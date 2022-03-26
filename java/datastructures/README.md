@@ -103,3 +103,27 @@ Method: `insertBefore(int value, int newValue)`
 Method: `insertAfter(int value, int newValue)`
 
 * Functionality: Inserts additional node after node holding element with argument value; new node holds element with value of argument integer "newValue". Public method with no expected return.
+
+### Code Challenge 30: Hash Tables
+3/25/22
+* Wrote class for HashMap and HashMapPair, along with several methods for HashMap.
+
+#### Challenge
+To create a class for hash map functionality: storing key-value pairs inside an array-like structure using sub-structures at each index.
+
+#### Approach & Efficiency
+
+#### API
+
+Method: `set()`
+* Functionality: Takes an argument Key and an argument Value to insert into the calling HashMap (nothing returned).
+
+Method: `get()`
+* Functionality: Takes an argument Key and returns the first value paired with that key within the calling HashMap.
+
+Method: `contains()`
+* Functionality: Takes an argument Key and returns a boolean for presence of that key within calling HashMap.
+
+Method: `keys()`
+* Functionality: Returns a list of all Key present within calling HashMap (no arguments).
+
