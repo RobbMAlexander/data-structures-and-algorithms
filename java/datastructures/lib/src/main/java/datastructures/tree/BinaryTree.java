@@ -4,18 +4,18 @@ import datastructures.stack.Stack;
 import java.util.ArrayList;
 
 
-public class BinaryTree {
+public class BinaryTree<T> {
 
-  Node root;
+  public Node root;
 
-  public Integer[] preOrderTraversal(){
+  public ArrayList<T> preOrderTraversal(){
 
-    ArrayList<Integer> valueList = new ArrayList<>();
+    ArrayList<T> valueList = new ArrayList<>();
     Stack<Node> traversalStack = new Stack<>();
    traversalStack.push(root);
     while (!traversalStack.isEmpty()) {
       Node checkedNode = traversalStack.pop();
-      valueList.add(checkedNode.value);
+      valueList.add((T) checkedNode.value);
       //right node checked/pushed first, so left will be popped first
       if (checkedNode.rightNode != null) {
         traversalStack.push(checkedNode.rightNode);
@@ -24,8 +24,8 @@ public class BinaryTree {
         traversalStack.push(checkedNode.leftNode);
       }
     }
-    Integer[] outputValues = new Integer[valueList.size()];
-    outputValues = valueList.toArray(outputValues);
+    ArrayList<T> outputValues = new ArrayList<>();
+//    outputValues = valueList.toArray(outputValues);
     return outputValues;
   }
 

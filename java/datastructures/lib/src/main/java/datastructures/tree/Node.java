@@ -1,12 +1,12 @@
 package datastructures.tree;
 
-public class Node
+public class Node<T>
 {
-  public int value;
+  public T value;
   public Node leftNode = null;
   public Node rightNode = null;
 
-  public Node(int value)
+  public Node(T value)
   {
     this.value = value;
   }
