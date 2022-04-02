@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class HashMap<Key, Value> {
-  ArrayList<LinkedList<HashMapPair<Key, Value>>> bucketArrayList;
+  public ArrayList<LinkedList<HashMapPair<Key, Value>>> bucketArrayList;
   int size;
 
   public HashMap(int size) {
