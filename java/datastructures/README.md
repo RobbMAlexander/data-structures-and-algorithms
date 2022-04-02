@@ -127,3 +127,25 @@ Method: `contains()`
 Method: `keys()`
 * Functionality: Returns a list of all Key present within calling HashMap (no arguments).
 
+### Code Challenge 35: Graph
+4/1/22
+* Wrote classes for Graph, Vertex, and Edge; wrote several methods for structure functionality.
+
+#### Challenge
+To create a class for list-linked graph functionality: storing a hash map of respective linked lists for each vertex, with each linked list holding a series of edges with references to the neighboring vertex (and weight as applicable)
+
+#### Approach & Efficiency
+
+#### API
+
+Method: `addVertex()`
+* Functionality: Takes an argument Vertex and creates a new row for it in the hash map; Increments vertexCount field; returns added Vertex if not already present in graph
+
+Method: `addEdge()`
+* Functionality: Takes in two argument Vertex 's and an optional `weight` property for the added Edge; No return.
+
+Method: `getVertices()`
+* Functionality: Returns a LinkedList of all the Vertex 's within the calling Graph.
+
+Method: `getNeighbors()`
+* Functionality: Takes an argument Vertex and returns a LinkedList of the Edge 's for that Vertex.
