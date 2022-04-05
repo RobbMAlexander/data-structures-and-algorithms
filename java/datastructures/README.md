@@ -142,10 +142,10 @@ Method: `addVertex()`
 * Functionality: Takes an argument Vertex and creates a new row for it in the hash map; Increments vertexCount field; returns added Vertex if not already present in graph
 
 Method: `addEdge()`
-* Functionality: Takes in two argument Vertex 's and an optional `weight` property for the added Edge; No return.
+* Functionality: Takes in two argument Vertex s and an optional `weight` property for the added Edge; No return.
 
 Method: `getVertices()`
-* Functionality: Returns a LinkedList of all the Vertex 's within the calling Graph.
+* Functionality: Returns a LinkedList of all the Vertex s within the calling Graph.
 
 Method: `getNeighbors()`
-* Functionality: Takes an argument Vertex and returns a LinkedList of the Edge 's for that Vertex.
+* Functionality: Takes an argument Vertex and returns a LinkedList of the Edge s for that Vertex.
