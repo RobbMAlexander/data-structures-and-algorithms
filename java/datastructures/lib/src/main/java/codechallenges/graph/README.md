@@ -38,3 +38,25 @@ Tests should account for cases where: all nodes are connected; no nodes are conn
 * Time: O(n) -- For n-1 pairs of listed vertices, the graph must be traversed to check for an edge (and its value). Nested lookup calls should be O(1).
 
 ## Code
+
+# Code Challenge 38 : Depth-First Traversal
+Whiteboard attempted 04/06/22
+Challenge overview: write a function that will return the pre-ordered list of all connected nodes in a graph, beginning with an argument node.
+
+## Whiteboard Image
+![Whiteboard Attempt](code-challenge-38-whiteboard.png)
+
+## My Approach
+
+
+### Testing
+
+Tests should account for cases where: all nodes are connected; no nodes are connected/present; Only one neighbor path exists; some nodes have many/ all neighbors and others have few/one;
+
+### Efficiency
+
+* Space: O(n) -- Temporary map structure may hold up to all of the nodes concurrently to avoid duplicates in return.
+
+* Time: O(n) -- Potentially all nodes must be traversed, but duplication check is done at O(1) as a hash map lookup.
+
+## Code
